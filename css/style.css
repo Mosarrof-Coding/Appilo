@@ -1,0 +1,72 @@
+#header header .left {
+  margin-right: 30px;
+}
+#header header .left i {
+  display: inline-block;
+  margin-right: 3px;
+}
+#header header .select {
+  display: inline-block;
+  margin-right: 30px;
+}
+#header header .select select {
+  text-transform: uppercase;
+}
+#header header .select select option {
+  background: #034a80;
+}
+#header header .input {
+  display: inline-block;
+  min-width: 240px;
+  overflow: hidden;
+  position: relative;
+}
+#header header .input input {
+  width: 100%;
+  background: #f7f7f7;
+  padding: 7px 15px;
+  border-radius: 17px;
+  text-transform: capitalize;
+  line-height: 0;
+}
+#header header .input input::-moz-placeholder {
+  color: #bebebe;
+}
+#header header .input input::placeholder {
+  color: #bebebe;
+}
+#header header .input i {
+  width: 30px;
+  height: 29px;
+  border-radius: 50%;
+  background: #055ea8;
+  display: grid;
+  place-items: center;
+  line-height: 0;
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}/*# sourceMappingURL=style.css.map */
