@@ -1,56 +1,129 @@
+@import "../variables/veriable";
 #header{
     header{
-        .left{
-            margin-right: 30px;
-            i{
-                display: inline-block;
-                margin-right: 3px;
-            }
-        }
-        .select{
-            display: inline-block;
-            margin-right: 30px;
-            select{
-                text-transform: uppercase;
-                option{
-                    background: #034a80;
+        .header_link{
+            padding: 20px 0;
+            border-bottom: 1px solid $grayShado;
+            .left{
+                margin-right: 30px;
+                font-weight: 400;
+                i{
+                    display: inline-block;
+                    margin-right: 3px;
                 }
             }
-        }
-        .input{
-            display: inline-block;
-            min-width: 240px;
-            overflow: hidden;
-            position: relative;
-            input{
-                width: 100%;
-                background: #f7f7f7;
-                padding: 7px 15px;
-                border-radius: 17px;
-                text-transform: capitalize;
-                line-height:0;
-                &::placeholder{
-                    color:#bebebe;
-                }
+            .right{
+                font-weight: 400;
             }
-            i{
-                width: 30px;
-                height: 29px;
-                border-radius: 50%;
-                background: #055ea8;
-                display: grid;
-                place-items: center;
-                line-height: 0;
-                font-size: 14px;
-                color:#fff;
-                position: absolute;
-                right: 5px;
-                top: 50%;
-                transform: translateY(-50%);
+            .searchInput{
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                .select{
+                    display: inline-block;
+                    margin-right: 30px;
+                    select{
+                        display: inline-block;
+                        text-transform: uppercase;
+                        option{
+                            background: $deepGreen;
+                        }
+                    }
+                }
+                .input{
+                    display: inline-block;
+                    min-width: 240px;
+                    overflow: hidden;
+                    position: relative;
+                    input{
+                        width: 100%;
+                        background: $ececec;
+                        padding: 7px 15px;
+                        border-radius: 17px;
+                        text-transform: capitalize;
+                        line-height:0;
+                        &::placeholder{
+                            color:$a7a7a7;
+                        }
+                    }
+                    i{
+                        width: 30px;
+                        height: 29px;
+                        border-radius: 50%;
+                        background: $deepGreen;
+                        display: grid;
+                        place-items: center;
+                        line-height: 0;
+                        font-size: 14px;
+                        color:$white;
+                        position: absolute;
+                        right: 5px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
             }
         }
     }
-    nav{
+    .navbar{
+        padding: 20px 0;
+        background: $white;
+        box-shadow: 0 8px 10px -7px $sadoEEE;
+        .meBrand{
 
+        }
+        .mytoggler{
+
+        }
+        .mycollepse{
+            .myul{
+                .nav-li{
+                    .nav-a{
+                        padding: 20px 0;
+                        margin-left: 30px;
+                        text-transform: capitalize;
+                        cursor: pointer;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: $grayGreen;
+                        letter-spacing: -.5px;
+                        position: relative;
+                        &:hover{
+                            color:$deepGreen;
+                        }
+                    }
+                    .demos{
+                        position: relative;
+                        .newLayer{
+                            position: absolute;
+                            left: 0;
+                            top: 3%;
+                            display: inline-block;
+                            background: $deepRed;
+                            font-size: 10px;
+                            font-weight: 400;
+                            line-height: 1;
+                            color:$white;
+                            text-transform: uppercase;
+                            padding: 2px 7px;
+                            z-index: 1;
+                        }
+                        &::after{
+                            border-top: 10px solid $deepRed;
+                            border-left: 10px solid $deepRed;
+                            border-bottom: 10px solid #ffffff00;
+                            content: "";
+                            position: absolute;
+                            left: 8%;
+                            top: 5%;
+                            z-index: 0;
+                        }
+                    }
+                    .dropUL{
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }
