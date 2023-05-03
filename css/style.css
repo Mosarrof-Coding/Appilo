@@ -20,7 +20,7 @@
 }
 #header header .header_link .searchInput .select {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 5%;
 }
 #header header .header_link .searchInput .select select {
   display: inline-block;
@@ -31,7 +31,7 @@
 }
 #header header .header_link .searchInput .input {
   display: inline-block;
-  min-width: 240px;
+  max-width: 240px;
   overflow: hidden;
   position: relative;
 }
@@ -68,6 +68,14 @@
   padding: 20px 0;
   background: #fff;
   box-shadow: 0 8px 10px -7px #eee;
+}
+#header .navbar .meBrand {
+  width: auto;
+}
+#header .navbar .mytoggler {
+  box-shadow: none !important;
+  padding: 0 !important;
+  border: none !important;
 }
 #header .navbar .mycollepse .myul .nav-li .nav-a {
   padding: 20px 0;
@@ -112,6 +120,141 @@
 }
 #header .navbar .mycollepse .myul .nav-li .dropUL {
   display: none;
+}
+
+#banner {
+  width: 100%;
+  height: 100vh;
+  background: #dedede;
+}
+
+#we_do {
+  padding: 140px 0;
+}
+#we_do .do_heading {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+#we_do .do_heading h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #9ca2a9;
+  letter-spacing: 1.8px;
+  display: inline-block;
+  text-transform: capitalize;
+  position: relative;
+}
+#we_do .do_heading h4::after {
+  width: 40%;
+  height: 2px;
+  background: #dedede;
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  display: inline-block;
+}
+#we_do .do_heading h2 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 55px;
+  color: #000000;
+  letter-spacing: -1.8px;
+  margin: 6px 0 20px;
+}
+#we_do .do_heading .pCmn {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+#we_do .items {
+  padding-top: 30px;
+}
+#we_do .items .doing_item {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px 0 80px 0;
+  position: relative;
+}
+#we_do .items .doing_item .itm_1 {
+  max-width: 315px;
+}
+#we_do .items .doing_item .itm_1 img {
+  width: 60px;
+}
+#we_do .items .doing_item .itm_1 h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+  margin: 18px 0;
+  text-transform: capitalize;
+}
+#we_do .items .doing_item .itm_1 p {
+  font-size: 14px;
+  line-height: 25px;
+  color: #99a1aa;
+  text-transform: capitalize;
+}
+#we_do .items .doing_item .itm_2 {
+  display: flex;
+  align-self: self-end;
+}
+#we_do .items .doing_item .itm_2 i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #5423BB;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  color: #fff;
+  box-shadow: 0 0 6px 0px #555;
+}
+#we_do .items .doing_item .doingLayer {
+  background: url(../images/cta-hover.jpg) no-repeat center/cover;
+  width: 100%;
+  height: 100%;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: all linear 0.3s;
+  display: none;
+}
+#we_do .items .doing_item .doingLayer.active {
+  display: flex;
+  width: 100%;
+}
+#we_do .items .doing_item .doingLayer.active .layerSpan1 .imgTxt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#we_do .items .doing_item .doingLayer.active .layerSpan1 .imgTxt h3 {
+  text-transform: capitalize;
+  color: #fff;
+}
+#we_do .items .doing_item .doingLayer.active .layerSpan1 .pLi {
+  display: block;
+  margin-top: 15px;
+  text-align: left;
+}
+#we_do .items .doing_item .doingLayer.active .layerSpan1 .pLi a {
+  color: #fff;
+}
+#we_do .items .doing_item .doingLayer.active .layerSpan2 {
+  padding-top: 10px !important;
 }
 
 * {

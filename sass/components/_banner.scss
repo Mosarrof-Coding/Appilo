@@ -1,0 +1,7 @@
+@import "../variables/veriable";
+@import "../mixins/mixins";
+#banner{
+    width: 100%;
+    height: 100vh;
+    background: $grayShado;
+}

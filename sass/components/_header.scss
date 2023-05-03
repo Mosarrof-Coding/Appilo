@@ -21,7 +21,7 @@
                 justify-content: right;
                 .select{
                     display: inline-block;
-                    margin-right: 30px;
+                    margin-right: 5%;
                     select{
                         display: inline-block;
                         text-transform: uppercase;
@@ -32,7 +32,7 @@
                 }
                 .input{
                     display: inline-block;
-                    min-width: 240px;
+                    max-width: 240px;
                     overflow: hidden;
                     position: relative;
                     input{
@@ -70,9 +70,13 @@
         background: $white;
         box-shadow: 0 8px 10px -7px $sadoEEE;
         .meBrand{
+            width: auto;
 
         }
         .mytoggler{
+            box-shadow: none !important;
+            padding: 0 !important;
+            border: none !important;
 
         }
         .mycollepse{

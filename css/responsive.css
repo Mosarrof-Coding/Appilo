@@ -1,1 +1,92 @@
-/*# sourceMappingURL=responsive.css.map */
+@media (max-width: 575px) {
+  #we_do .items .doing_item {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #we_do .items .doing_item .itm_1 {
+    text-align: center !important;
+  }
+  #we_do .items .doing_item .itm_2 {
+    display: block;
+    width: 100%;
+  }
+  #we_do .items .doing_item .itm_2 i {
+    margin: auto;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  #we_do .items .doing_item {
+    display: block;
+    text-align: center;
+  }
+  #we_do .items .doing_item .itm_1 {
+    text-align: center !important;
+  }
+  #we_do .items .doing_item .itm_2 {
+    display: block;
+    width: 100%;
+  }
+  #we_do .items .doing_item .itm_2 i {
+    margin: auto;
+  }
+  #we_do .items .doing_item .doingLayer.active {
+    display: flex;
+  }
+  #we_do .items .doing_item .doingLayer.active .layerSpan1 .imgTxt {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  #we_do .items .doing_item .doingLayer.active .layerSpan1 .imgTxt h3 {
+    text-transform: capitalize;
+  }
+  #we_do .items .doing_item .doingLayer.active .layerSpan1 .pLi {
+    display: block;
+    margin-top: 8px !important;
+    text-align: left;
+  }
+  #we_do .items .doing_item .doingLayer.active .layerSpan2 {
+    padding-top: 10px !important;
+    display: block;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #we_do .items .doing_item .doingLayer.active {
+    display: flex;
+  }
+  #we_do .items .doing_item .doingLayer.active .layerSpan1 .imgTxt {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  #we_do .items .doing_item .doingLayer.active .layerSpan1 .imgTxt h3 {
+    text-transform: capitalize;
+  }
+  #we_do .items .doing_item .doingLayer.active .layerSpan1 .pLi {
+    display: block;
+    margin-top: 8px !important;
+    text-align: left;
+  }
+  #we_do .items .doing_item .doingLayer.active .layerSpan2 {
+    padding-top: 10px !important;
+    display: block;
+    margin: auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #we_do .items .doing_item {
+    display: block;
+    text-align: center;
+  }
+  #we_do .items .doing_item .itm_1 {
+    text-align: center !important;
+  }
+  #we_do .items .doing_item .itm_2 {
+    display: block;
+    width: 100%;
+  }
+  #we_do .items .doing_item .itm_2 i {
+    margin: auto;
+  }
+}/*# sourceMappingURL=responsive.css.map */

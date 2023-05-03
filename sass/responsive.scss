@@ -1,0 +1,120 @@
+@media (max-width: 575px) {
+    #we_do{
+        .items{
+            .doing_item{
+                justify-content: center;
+                flex-wrap: wrap;
+                .itm_1{
+                    text-align: center !important;
+                }
+                .itm_2{
+                    display: block;
+                    width: 100%;
+                    i{
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    #we_do{
+        .items{
+            .doing_item{
+                display: block;
+                text-align: center;
+                .itm_1{
+                    text-align: center !important;
+                }
+                .itm_2{
+                    display: block;
+                    width: 100%;
+                    i{
+                        margin: auto;
+                    }
+                }
+                .doingLayer.active{
+                    display: flex;
+                    .layerSpan1{
+                        .imgTxt{
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 20px;
+                            h3{
+                                text-transform: capitalize;
+                            }
+                        }
+                        .pLi{
+                            display:block;
+                            margin-top: 8px !important;
+                            text-align: left;
+                        }
+                    }
+                    .layerSpan2{
+                        padding-top: 10px !important;
+                        display: block;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    #we_do{
+        .items{
+            .doing_item{
+                .itm_1{
+                }
+                .itm_2{
+                    i{
+                    }
+                }
+                .doingLayer.active{
+                    display: flex;
+                    .layerSpan1{
+                        .imgTxt{
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 20px;
+                            h3{
+                                text-transform: capitalize;
+                            }
+                        }
+                        .pLi{
+                            display:block;
+                            margin-top: 8px !important;
+                            text-align: left;
+                        }
+                    }
+                    .layerSpan2{
+                        padding-top: 10px !important;
+                        display: block;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    #we_do{
+        .items{
+            .doing_item{
+                display: block;
+                text-align: center;
+                .itm_1{
+                    text-align: center !important;
+                }
+                .itm_2{
+                    display: block;
+                    width: 100%;
+                    i{
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
