@@ -128,4 +128,68 @@
             }
         }
     }
+    .rips_sewed{
+        width: 100%;
+        margin: 50px 0;
+        .rips_slide{
+            width: 100%;
+            .rips_item{
+                position: relative;
+                height: 580px !important;
+                img{
+                    height: 100%;
+                }
+                .ripsTxt{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: self-end;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: linear-gradient(to bottom, $white, 0%, $grayShado, 20%);
+                    padding: 20px;
+                    .title{
+                        h2{
+                            font-size: 36px;
+                            font-weight: 700;
+                            line-height: 48px;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                            margin-bottom: 0;
+                        }
+                        small{
+                            text-transform: capitalize;
+                            font-size: 18px;
+                            color: #FFFFFF;
+                            letter-spacing: 3px;
+                        }
+                    }
+                    .reebokBtn{
+                        display: inline-block;
+                        margin: 20px 0;
+                        .we_do_btn_lap{
+                            display: inline-block;
+                            text-align: center;
+                            padding: 10px 40px;
+                            background: $white;
+                            color:$deepGreen;
+                            text-transform: capitalize;
+                            border-radius: 30px;
+                            font-size: 18px;
+                            font-weight: 600;
+                            position: relative;
+                            &:hover{
+                                width: 100%;
+                                background: conic-gradient(#e57a7a, #d7e56d, #11585c, #5b339f, #e13ced, #832d59, #17bc22, #056879,);
+                                color:$white;
+                                box-shadow: 0 0 10px 1px $grayShado;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

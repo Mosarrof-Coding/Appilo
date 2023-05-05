@@ -256,6 +256,68 @@
 #we_do .items .doing_item .doingLayer.active .layerSpan2 {
   padding-top: 10px !important;
 }
+#we_do .rips_sewed {
+  width: 100%;
+  margin: 50px 0;
+}
+#we_do .rips_sewed .rips_slide {
+  width: 100%;
+}
+#we_do .rips_sewed .rips_slide .rips_item {
+  position: relative;
+  height: 580px !important;
+}
+#we_do .rips_sewed .rips_slide .rips_item img {
+  height: 100%;
+}
+#we_do .rips_sewed .rips_slide .rips_item .ripsTxt {
+  display: flex;
+  justify-content: space-between;
+  align-items: self-end;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, #fff, 0%, #dedede, 20%);
+  padding: 20px;
+}
+#we_do .rips_sewed .rips_slide .rips_item .ripsTxt .title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+#we_do .rips_sewed .rips_slide .rips_item .ripsTxt .title small {
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 3px;
+}
+#we_do .rips_sewed .rips_slide .rips_item .ripsTxt .reebokBtn {
+  display: inline-block;
+  margin: 20px 0;
+}
+#we_do .rips_sewed .rips_slide .rips_item .ripsTxt .reebokBtn .we_do_btn_lap {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 40px;
+  background: #fff;
+  color: #5423BB;
+  text-transform: capitalize;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+#we_do .rips_sewed .rips_slide .rips_item .ripsTxt .reebokBtn .we_do_btn_lap:hover {
+  width: 100%;
+  background: conic-gradient(#e57a7a, #d7e56d, #11585c, #5b339f, #e13ced, #832d59, #17bc22, #056879);
+  color: #fff;
+  box-shadow: 0 0 10px 1px #dedede;
+}
 
 * {
   margin: 0;
