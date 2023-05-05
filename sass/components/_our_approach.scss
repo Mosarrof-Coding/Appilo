@@ -1,0 +1,296 @@
+@import "../variables/veriable";
+#our_approach{
+    .approach_heading{
+        @include heading;
+    }
+    .project_planning{
+        margin-top: 50px;
+        ul{
+            padding-left: 0;
+            li{
+                padding: 20px 30px;
+                border-radius: 5px 5px 0 0;
+                a{
+                    text-transform: capitalize;
+                    font-size: 18px;
+                    font-weight: 600;
+                    letter-spacing: .05rem;
+                    margin-bottom: 15px;
+                    color:$shad555;
+                }
+            }
+            li.active{
+                background: $deepGreen;
+                a{
+                    color:$white;
+                }
+            }
+        }
+        .wrapperontent{
+            background: url(../images/proImg.jpg)no-repeat 100% 100%;
+            box-shadow: 0 0 15px #dad8d8;
+            padding: 45px 50px 60px;
+            overflow: hidden;
+            display: none;
+            h3{
+                font-size: 24px;
+                font-weight: 700;
+                color: #000000;
+                margin-bottom: 30px;
+                text-transform: capitalize;
+            }
+            p{
+                font-size: 14px;
+                color: #a0aab5;
+                margin-right: 45%;
+                margin-bottom: 15px;
+            }
+            ul{
+                padding-left: 0;
+                .wrapLi{
+                    display: block;
+                    font-size: 14px;
+                    line-height: 30px;
+                    color: #59626c;
+                    margin: 5px 0;
+                    padding: 0;
+                    background:transparent;
+                }
+            }
+        }
+        .wrapperontent.active{
+            display: block;
+        }
+    }
+    .dreamer{
+        margin-top: 80px;
+        .inner{
+            background: url(../images/video-bg.jpg) no-repeat center/cover;
+            padding: 150px 0;
+            text-align: center;
+            a{
+                display: inline-block;
+                i{
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    background: transparent;
+                    border: 4px solid $white;
+                    display: grid;
+                    place-items: center;
+                    font-size: 30px;
+                    padding-left: 5px;
+                    color:$white;
+                    margin: auto;
+                }
+            }
+            h1{
+                margin-top: 20px;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 50px;
+                color: #FFFFFF;
+                text-transform: capitalize;
+            }
+            .type{
+                margin-top: 60px;
+                display: flex;
+                gap:50px;
+                justify-content: center;
+                .one{
+                    display: inline-block;
+                    a{
+                        display: inline-block;
+                        color:$white;
+                        font-size: 18px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        position: relative;
+                        &::before{
+                            width: 5px;
+                            height: 5px;
+                            background: $white;
+                            border-radius: 50%;
+                            position: absolute;
+                            content: "";
+                            left: -15px;
+                            top: 45%;
+                        }
+                        &:hover{
+                            &::before{
+                                background: $deepGreen;
+                            }
+                            color:$deepGreen;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .approach_filter{
+        margin: 100px 0 50px 0;
+        .approach_button{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .filterBtn{
+                position: relative;
+                font-size: 18px;
+                font-weight: 600;
+                padding: 0 14px 0 0;
+                background: transparent;
+                cursor: pointer;
+                text-transform: capitalize;
+                margin: 0 10px 0 0;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    right: 0px;
+                    top: 4px;
+                    width: 2px;
+                    height: 80%;
+                    background: $shad555;
+                    transform: rotate(22.5deg);
+                }
+                &:hover{
+                    color:$deepGreen;
+                }
+            }
+            .filterBtn.active{
+                color:$deepGreen;
+            }
+            .filterBtn:last-child{
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+    .filterItem{
+        width: 100%;
+        overflow: hidden;
+        .fillImg{
+            position: relative;
+            img{
+                width: 120%;
+                margin-left: -50px;
+                transition: cubic-bezier(0.25, 1.08, 0.83, 1) .3s;
+            }
+            .itemLayer{
+                display: grid;
+                place-items: center;
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+                background: #492ec3af;
+                transition: all linear .4s;
+                opacity: 0;
+                visibility: hidden;
+                i{
+                    font-size: 20px;
+                    color:$white;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    border: 3px solid $white;
+                    display: grid;
+                    place-items: center;
+                    margin-left: -100px;
+                    transition: cubic-bezier(0.25, 1.08, 0.83, 1) .5s;
+                    opacity: 50%;
+                }
+            }
+        }
+        .filterTxt{
+            padding: 20px 0;
+            h5{
+                text-transform: capitalize;
+                font-size: 24px;
+                margin-bottom: 4px;
+                color: #031633;
+            }
+            small{
+                text-transform: capitalize;
+                font-size: 16px;
+                color: #99a4b0;
+            }
+        }
+        &:hover{
+            .itemLayer{
+                opacity: 1;
+                visibility: visible;
+                i{
+                    margin-left: 0;
+                    opacity: 1;
+                }
+            }
+            img{
+                margin-left: 0;
+            }
+        }
+    }
+    .approachBtn{
+        display:block;
+        margin: 50px 0;
+        text-align: center;
+        a{
+            border: 2px solid $deepGreen;
+            @include cmnBtn;
+        }
+    }
+    .line{
+        width: 100%;
+        height: 1px;
+        background: $shad555;
+    }
+    .appMian{
+        width: 100%;
+        display: block;
+        margin: 70px 0;
+        .approachSlider{
+            width: 90%;
+            display: block;
+            margin: auto;
+            .appItem{
+                text-align: center;
+                img{
+                    width: auto;
+                    margin: auto;
+                }
+                p{
+                    font-size: 30px;
+                    font-weight: 400;
+                    line-height: 48px;
+                    color: #000000;
+                    margin: 15px 0 0;
+                }
+                .befor{
+                    width: 150px;
+                    height: 2px;
+                    background: $deepGreen;
+                    display: inline-block;
+                    margin-top: 50px;
+                }
+                .name{
+                    margin: auto;
+                    h5{
+                        text-transform: capitalize;
+                        font-size: 30px;
+                        font-weight: 700;
+                        color: #000000;
+                        margin-bottom: 3px;
+                    }
+                    small{
+                        font-size: 20px;
+                        font-weight: 400;
+                        color: #7c8489;
+                        text-transform: capitalize;
+                    }
+    
+                }
+            }
+        }
+    }
+}

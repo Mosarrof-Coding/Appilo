@@ -149,11 +149,11 @@
 #we_do .do_heading h4::after {
   width: 40%;
   height: 2px;
-  background: #dedede;
+  background: #5423BB;
   position: absolute;
   content: "";
   left: 50%;
-  top: 100%;
+  top: 120%;
   transform: translateX(-50%);
   display: inline-block;
 }
@@ -265,10 +265,11 @@
 }
 #we_do .rips_sewed .rips_slide .rips_item {
   position: relative;
-  height: 580px !important;
+  height: 550px;
 }
 #we_do .rips_sewed .rips_slide .rips_item img {
   height: 100%;
+  width: 100%;
 }
 #we_do .rips_sewed .rips_slide .rips_item .ripsTxt {
   display: flex;
@@ -313,10 +314,348 @@
   position: relative;
 }
 #we_do .rips_sewed .rips_slide .rips_item .ripsTxt .reebokBtn .we_do_btn_lap:hover {
-  width: 100%;
   background: conic-gradient(#e57a7a, #d7e56d, #11585c, #5b339f, #e13ced, #832d59, #17bc22, #056879);
   color: #fff;
   box-shadow: 0 0 10px 1px #dedede;
+}
+
+#our_approach .approach_heading {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+#our_approach .approach_heading h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #9ca2a9;
+  letter-spacing: 1.8px;
+  display: inline-block;
+  text-transform: capitalize;
+  position: relative;
+}
+#our_approach .approach_heading h4::after {
+  width: 40%;
+  height: 2px;
+  background: #5423BB;
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 120%;
+  transform: translateX(-50%);
+  display: inline-block;
+}
+#our_approach .approach_heading h2 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 55px;
+  color: #000000;
+  letter-spacing: -1.8px;
+  margin: 6px 0 20px;
+}
+#our_approach .approach_heading .pCmn {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+#our_approach .project_planning {
+  margin-top: 50px;
+}
+#our_approach .project_planning ul {
+  padding-left: 0;
+}
+#our_approach .project_planning ul li {
+  padding: 20px 30px;
+  border-radius: 5px 5px 0 0;
+}
+#our_approach .project_planning ul li a {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+#our_approach .project_planning ul li.active {
+  background: #5423BB;
+}
+#our_approach .project_planning ul li.active a {
+  color: #fff;
+}
+#our_approach .project_planning .wrapperontent {
+  background: url(../images/proImg.jpg) no-repeat 100% 100%;
+  box-shadow: 0 0 15px #dad8d8;
+  padding: 45px 50px 60px;
+  overflow: hidden;
+  display: none;
+}
+#our_approach .project_planning .wrapperontent h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+#our_approach .project_planning .wrapperontent p {
+  font-size: 14px;
+  color: #a0aab5;
+  margin-right: 45%;
+  margin-bottom: 15px;
+}
+#our_approach .project_planning .wrapperontent ul {
+  padding-left: 0;
+}
+#our_approach .project_planning .wrapperontent ul .wrapLi {
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  color: #59626c;
+  margin: 5px 0;
+  padding: 0;
+  background: transparent;
+}
+#our_approach .project_planning .wrapperontent.active {
+  display: block;
+}
+#our_approach .dreamer {
+  margin-top: 80px;
+}
+#our_approach .dreamer .inner {
+  background: url(../images/video-bg.jpg) no-repeat center/cover;
+  padding: 150px 0;
+  text-align: center;
+}
+#our_approach .dreamer .inner a {
+  display: inline-block;
+}
+#our_approach .dreamer .inner a i {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: transparent;
+  border: 4px solid #fff;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  padding-left: 5px;
+  color: #fff;
+  margin: auto;
+}
+#our_approach .dreamer .inner h1 {
+  margin-top: 20px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #FFFFFF;
+  text-transform: capitalize;
+}
+#our_approach .dreamer .inner .type {
+  margin-top: 60px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+#our_approach .dreamer .inner .type .one {
+  display: inline-block;
+}
+#our_approach .dreamer .inner .type .one a {
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: relative;
+}
+#our_approach .dreamer .inner .type .one a::before {
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  left: -15px;
+  top: 45%;
+}
+#our_approach .dreamer .inner .type .one a:hover {
+  color: #5423BB;
+}
+#our_approach .dreamer .inner .type .one a:hover::before {
+  background: #5423BB;
+}
+#our_approach .approach_filter {
+  margin: 100px 0 50px 0;
+}
+#our_approach .approach_filter .approach_button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#our_approach .approach_filter .approach_button .filterBtn {
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 14px 0 0;
+  background: transparent;
+  cursor: pointer;
+  text-transform: capitalize;
+  margin: 0 10px 0 0;
+}
+#our_approach .approach_filter .approach_button .filterBtn::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 4px;
+  width: 2px;
+  height: 80%;
+  background: #555;
+  transform: rotate(22.5deg);
+}
+#our_approach .approach_filter .approach_button .filterBtn:hover {
+  color: #5423BB;
+}
+#our_approach .approach_filter .approach_button .filterBtn.active {
+  color: #5423BB;
+}
+#our_approach .approach_filter .approach_button .filterBtn:last-child::after {
+  display: none;
+}
+#our_approach .filterItem {
+  width: 100%;
+  overflow: hidden;
+}
+#our_approach .filterItem .fillImg {
+  position: relative;
+}
+#our_approach .filterItem .fillImg img {
+  width: 120%;
+  margin-left: -50px;
+  transition: cubic-bezier(0.25, 1.08, 0.83, 1) 0.3s;
+}
+#our_approach .filterItem .fillImg .itemLayer {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(73, 46, 195, 0.6862745098);
+  transition: all linear 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+#our_approach .filterItem .fillImg .itemLayer i {
+  font-size: 20px;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  display: grid;
+  place-items: center;
+  margin-left: -100px;
+  transition: cubic-bezier(0.25, 1.08, 0.83, 1) 0.5s;
+  opacity: 50%;
+}
+#our_approach .filterItem .filterTxt {
+  padding: 20px 0;
+}
+#our_approach .filterItem .filterTxt h5 {
+  text-transform: capitalize;
+  font-size: 24px;
+  margin-bottom: 4px;
+  color: #031633;
+}
+#our_approach .filterItem .filterTxt small {
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #99a4b0;
+}
+#our_approach .filterItem:hover .itemLayer {
+  opacity: 1;
+  visibility: visible;
+}
+#our_approach .filterItem:hover .itemLayer i {
+  margin-left: 0;
+  opacity: 1;
+}
+#our_approach .filterItem:hover img {
+  margin-left: 0;
+}
+#our_approach .approachBtn {
+  display: block;
+  margin: 50px 0;
+  text-align: center;
+}
+#our_approach .approachBtn a {
+  border: 2px solid #5423BB;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 40px;
+  background: #fff;
+  color: #5423BB;
+  text-transform: capitalize;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+#our_approach .approachBtn a:hover {
+  background: conic-gradient(#e57a7a, #d7e56d, #11585c, #5b339f, #e13ced, #832d59, #17bc22, #056879);
+  color: #fff;
+  box-shadow: 0 0 10px 1px #dedede;
+}
+#our_approach .line {
+  width: 100%;
+  height: 1px;
+  background: #555;
+}
+#our_approach .appMian {
+  width: 100%;
+  display: block;
+  margin: 70px 0;
+}
+#our_approach .appMian .approachSlider {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+#our_approach .appMian .approachSlider .appItem {
+  text-align: center;
+}
+#our_approach .appMian .approachSlider .appItem img {
+  width: auto;
+  margin: auto;
+}
+#our_approach .appMian .approachSlider .appItem p {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #000000;
+  margin: 15px 0 0;
+}
+#our_approach .appMian .approachSlider .appItem .befor {
+  width: 150px;
+  height: 2px;
+  background: #5423BB;
+  display: inline-block;
+  margin-top: 50px;
+}
+#our_approach .appMian .approachSlider .appItem .name {
+  margin: auto;
+}
+#our_approach .appMian .approachSlider .appItem .name h5 {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 3px;
+}
+#our_approach .appMian .approachSlider .appItem .name small {
+  font-size: 20px;
+  font-weight: 400;
+  color: #7c8489;
+  text-transform: capitalize;
 }
 
 * {

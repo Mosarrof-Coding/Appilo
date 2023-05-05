@@ -2,43 +2,7 @@
 #we_do{
     padding: 140px 0;
     .do_heading{
-        display:block;
-        margin:0 auto;
-        text-align: center;
-        h4{
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 30px;
-            color: #9ca2a9;
-            letter-spacing: 1.8px;
-            display: inline-block;
-            text-transform: capitalize;
-            position: relative;
-            &::after{
-                width: 40%;
-                height: 2px;
-                background: $grayShado;
-                position: absolute;
-                content: "";
-                left: 50%;
-                top: 100%;
-                transform: translateX(-50%);
-                display: inline-block;
-            }
-        }
-        h2{
-            font-size: 42px;
-            font-weight: 700;
-            line-height: 55px;
-            color: #000000;
-            letter-spacing: -1.8px;
-            margin: 6px 0 20px;
-        }
-        .pCmn{
-            font-size: 1rem;
-            font-weight: 400;
-            line-height: 1.5;
-        }
+        @include heading;
     }
     .items{
         padding-top: 30px;
@@ -135,9 +99,10 @@
             width: 100%;
             .rips_item{
                 position: relative;
-                height: 580px !important;
+                height: 550px;
                 img{
                     height: 100%;
+                    width: 100%;
                 }
                 .ripsTxt{
                     display: flex;
@@ -170,22 +135,7 @@
                         display: inline-block;
                         margin: 20px 0;
                         .we_do_btn_lap{
-                            display: inline-block;
-                            text-align: center;
-                            padding: 10px 40px;
-                            background: $white;
-                            color:$deepGreen;
-                            text-transform: capitalize;
-                            border-radius: 30px;
-                            font-size: 18px;
-                            font-weight: 600;
-                            position: relative;
-                            &:hover{
-                                width: 100%;
-                                background: conic-gradient(#e57a7a, #d7e56d, #11585c, #5b339f, #e13ced, #832d59, #17bc22, #056879,);
-                                color:$white;
-                                box-shadow: 0 0 10px 1px $grayShado;
-                            }
+                            @include cmnBtn;
                         }
                     }
                 }
