@@ -1,0 +1,14 @@
+#blogs{
+    padding: 100px 0;
+    .blogHeading{
+        @include heading;
+        margin-bottom: 50px;
+    }
+    .blgBtn{
+        margin-top: 50px;
+        text-align: center;
+        a{
+            @include cmnBtn;
+        }
+    }
+}

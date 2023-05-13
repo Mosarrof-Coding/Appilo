@@ -31,8 +31,10 @@ $('.rips_slide').slick({
   });
   // leadership leadSlider---------
 $('.leadSlider').slick({
-    dots: false,
-    arrows:false,
+    dots: true,
+    arrows:true,
+    prevArrow: '.leftbtnn',
+    nextArrow: '.rbtn',
     autoplay:true,
     infinite: true,
     speed: 300,
