@@ -164,6 +164,7 @@
   color: #000000;
   letter-spacing: -1.8px;
   margin: 6px 0 20px;
+  text-transform: capitalize;
 }
 #we_do .do_heading .pCmn {
   font-size: 1rem;
@@ -352,6 +353,7 @@
   color: #000000;
   letter-spacing: -1.8px;
   margin: 6px 0 20px;
+  text-transform: capitalize;
 }
 #our_approach .approach_heading .pCmn {
   font-size: 1rem;
@@ -656,6 +658,149 @@
   font-weight: 400;
   color: #7c8489;
   text-transform: capitalize;
+}
+
+.clients {
+  width: 100%;
+  background: url(../images/video-bg.jpg) no-repeat center/cover;
+  background-attachment: fixed;
+}
+.clients .happyClients i {
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  border: 2px solid #fff;
+  display: grid;
+  place-items: center;
+}
+.clients .happyClients .clgroup h1 {
+  text-transform: capitalize;
+  color: white;
+  font-weight: 500;
+}
+.clients .happyClients .clgroup .happy {
+  text-transform: capitalize;
+  color: white;
+}
+
+#leadership {
+  padding: 100px 0;
+}
+#leadership .leadTitle {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+#leadership .leadTitle h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #9ca2a9;
+  letter-spacing: 1.8px;
+  display: inline-block;
+  text-transform: capitalize;
+  position: relative;
+}
+#leadership .leadTitle h4::after {
+  width: 40%;
+  height: 2px;
+  background: #5423BB;
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 120%;
+  transform: translateX(-50%);
+  display: inline-block;
+}
+#leadership .leadTitle h2 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 55px;
+  color: #000000;
+  letter-spacing: -1.8px;
+  margin: 6px 0 20px;
+  text-transform: capitalize;
+}
+#leadership .leadTitle .pCmn {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+#leadership .leadSlider {
+  margin-top: 50px;
+}
+#leadership .leadSlider .col-lg-4 {
+  margin: 0 8px;
+}
+#leadership .leadSlider .col-lg-4 .leader {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  position: relative;
+}
+#leadership .leadSlider .col-lg-4 .leader img {
+  width: 100%;
+}
+#leadership .leadSlider .col-lg-4 .leader .sIcpon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  z-index: 2;
+}
+#leadership .leadSlider .col-lg-4 .leader .sIcpon a {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: -100px;
+  opacity: 0;
+  visibility: hidden;
+}
+#leadership .leadSlider .col-lg-4 .leader .sIcpon a:nth-child(1) {
+  transition: all linear 0.3s;
+}
+#leadership .leadSlider .col-lg-4 .leader .sIcpon a:nth-child(2) {
+  transition: all linear 0.4s;
+}
+#leadership .leadSlider .col-lg-4 .leader .sIcpon a:nth-child(3) {
+  transition: all linear 0.5s;
+}
+#leadership .leadSlider .col-lg-4 .leader .leaderCover {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 75%;
+  background: rgba(40, 76, 137, 0.4901960784);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 0.3s;
+}
+#leadership .leadSlider .col-lg-4 .leader .leaderCover h3 {
+  text-transform: capitalize;
+}
+#leadership .leadSlider .col-lg-4 .leader .leaderCover h3 a {
+  color: #fff;
+}
+#leadership .leadSlider .col-lg-4 .leader .leaderCover h5 {
+  text-transform: capitalize;
+  color: #fff;
+}
+#leadership .leadSlider .col-lg-4 .leader:hover .leaderCover {
+  top: 0;
+}
+#leadership .leadSlider .col-lg-4 .leader:hover .sIcpon a {
+  margin-bottom: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 * {

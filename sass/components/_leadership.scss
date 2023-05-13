@@ -1,0 +1,84 @@
+#leadership{
+    padding: 100px 0;
+    .leadTitle{
+        @include heading;
+    }
+    .leadSlider{
+        margin-top: 50px;
+        .col-lg-4{
+            margin: 0 8px;
+            .leader{
+                width: 100%;
+                display: grid;
+                place-items: center;
+                text-align: center;
+                position: relative;
+                img{
+                    width: 100%;
+                }
+                .sIcpon{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50% , -50%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15px;
+                    z-index: 2;
+                    a{
+                        font-size: 20px;
+                        color:$white;
+                        margin-bottom: -100px;
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                    a:nth-child(1){
+                        transition: all linear .3s;
+                    }
+                    a:nth-child(2){
+                        transition: all linear .4s;
+                    }
+                    a:nth-child(3){
+                        transition: all linear .5s;
+                    }
+                }
+                .leaderCover{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    top: 75%;
+                    background: #284c897d;
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    transition: .3s;
+                    h3{
+                        text-transform: capitalize;
+                        a{
+                            color:$white;
+                        }
+                    }
+                    h5{
+                        text-transform: capitalize;
+                        color:$white;
+                    }
+                }
+                &:hover{
+                    .leaderCover{
+                        top: 0;
+                    }
+                    .sIcpon{
+                        a{
+                            margin-bottom: 0;
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

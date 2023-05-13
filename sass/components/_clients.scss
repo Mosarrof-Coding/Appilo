@@ -1,0 +1,28 @@
+.clients{
+    width: 100%;
+    background: url(../images/video-bg.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    .happyClients{
+        i{
+            color:$white;
+            padding: 10px;
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+            border: 2px solid $white;
+            display: grid;
+            place-items: center;
+        }
+        .clgroup{
+            h1{
+                text-transform: capitalize;
+                color:white;
+                font-weight: 500;
+            }
+            .happy{
+                text-transform: capitalize;
+                color:white;
+            }
+        }
+    }
+}
