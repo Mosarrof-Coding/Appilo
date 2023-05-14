@@ -610,7 +610,7 @@
 #our_approach .line {
   width: 100%;
   height: 1px;
-  background: #555;
+  background: #f3f3f3;
 }
 #our_approach .appMian {
   width: 100%;
@@ -987,7 +987,259 @@
 #newsletter {
   background: url(../images/sign-bg.jpg) no-repeat center/cover;
   background-attachment: fixed;
+}
+#newsletter .signup {
   padding: 100px 0;
+}
+#newsletter .signup h3 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 42px;
+  color: #FFFFFF;
+  margin-bottom: 26px;
+}
+#newsletter .signup .input {
+  display: flex;
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+#newsletter .signup .input input {
+  width: 100%;
+  padding: 10px 20px;
+  text-transform: capitalize;
+}
+#newsletter .signup .input input::-moz-placeholder {
+  color: #555;
+}
+#newsletter .signup .input input::placeholder {
+  color: #555;
+}
+#newsletter .signup .input button {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 40px;
+  background: rgba(40, 76, 137, 0.4901960784);
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0 40px;
+  font-size: 18px;
+  font-weight: 600;
+}
+#newsletter .signup .input button:hover {
+  background: conic-gradient(#e57a7a, #d7e56d, #11585c, #5b339f, #e13ced, #832d59, #17bc22, #056879);
+  color: #fff;
+  box-shadow: 0 0 10px 1px #dedede;
+}
+#newsletter .image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+}
+#newsletter .image img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#contact {
+  padding: 100px 0;
+}
+#contact .conttitle {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+#contact .conttitle h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #9ca2a9;
+  letter-spacing: 1.8px;
+  display: inline-block;
+  text-transform: capitalize;
+  position: relative;
+}
+#contact .conttitle h4::after {
+  width: 40%;
+  height: 2px;
+  background: #5423BB;
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 120%;
+  transform: translateX(-50%);
+  display: inline-block;
+}
+#contact .conttitle h2 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 55px;
+  color: #000000;
+  letter-spacing: -1.8px;
+  margin: 6px 0 20px;
+  text-transform: capitalize;
+}
+#contact .conttitle .pCmn {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+#contact .conttitle .contualBtn {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+#contact .conttitle .contualBtn a {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 40px;
+  background: rgba(40, 76, 137, 0.4901960784);
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+#contact .conttitle .contualBtn a:hover {
+  background: conic-gradient(#e57a7a, #d7e56d, #11585c, #5b339f, #e13ced, #832d59, #17bc22, #056879);
+  color: #fff;
+  box-shadow: 0 0 10px 1px #dedede;
+}
+#contact .mailBox {
+  display: block;
+  margin-top: 40px;
+}
+#contact .mailBox .map {
+  background: transparent;
+}
+#contact .mailBox .form h2 {
+  text-transform: capitalize;
+}
+#contact .mailBox .form form input {
+  padding: 15px 20px;
+  width: 100%;
+  text-transform: capitalize;
+  margin-top: 20px;
+  border-radius: 25px;
+  border: 1px solid rgba(40, 76, 137, 0.4901960784);
+}
+#contact .mailBox .form form input::-moz-placeholder {
+  color: #eee;
+}
+#contact .mailBox .form form input::placeholder {
+  color: #eee;
+}
+#contact .mailBox .form form textarea {
+  width: 100%;
+  min-height: 150px;
+  border: 1px solid rgba(40, 76, 137, 0.4901960784);
+  border-radius: 25px;
+  margin-top: 20px;
+  padding: 20px;
+  text-transform: capitalize;
+}
+#contact .mailBox .form form textarea::-moz-placeholder {
+  color: #eee;
+}
+#contact .mailBox .form form textarea::placeholder {
+  color: #eee;
+}
+#contact .mailBox .form form button {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 40px;
+  background: rgba(40, 76, 137, 0.4901960784);
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  margin-top: 10px;
+}
+#contact .mailBox .form form button:hover {
+  background: conic-gradient(#e57a7a, #d7e56d, #11585c, #5b339f, #e13ced, #832d59, #17bc22, #056879);
+  color: #fff;
+  box-shadow: 0 0 10px 1px #dedede;
+}
+
+footer {
+  padding-top: 100px;
+  background: rgba(40, 76, 137, 0.4901960784);
+}
+footer .logo {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+footer .logo h3 {
+  color: #5423BB;
+}
+footer .logo ul {
+  padding-left: 0;
+  margin-top: 20px;
+}
+footer .logo ul li {
+  margin-top: 10px;
+}
+footer .logo ul li a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  text-transform: capitalize;
+}
+footer .logo ul li a i {
+  margin-right: 5px;
+}
+footer .logo .ulBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .logo .ulBox ul {
+  margin-top: 0;
+}
+footer .logo .ulBox ul li .foot-a:hover {
+  color: #fff;
+}
+footer .copyright {
+  padding: 20px 0;
+  background: #0e0d41;
+}
+footer .copyright .copy {
+  text-transform: capitalize;
+  color: #dedede;
+}
+footer .copyright .socilIconw {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 20px;
+}
+footer .copyright .socilIconw i {
+  font-size: 20px;
+  color: #dedede;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #5423BB;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+footer .copyright .socilIconw i:hover {
+  border: 1px solid #fff;
 }
 
 * {

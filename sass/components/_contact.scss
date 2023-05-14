@@ -1,0 +1,56 @@
+#contact{
+    padding: 100px 0;
+    .conttitle{
+        @include heading;
+        .contualBtn{
+            display: flex;
+            justify-content: center;
+            gap:30px;
+            margin: 30px 0;
+            a{
+                @include cmnBtn;
+            }
+        }
+    }
+    .mailBox{
+        display: block;
+        margin-top: 40px;
+        .map{
+            background: transparent;
+        }
+        .form{
+            h2{
+                text-transform: capitalize;
+            }
+            form{
+                input{
+                    padding: 15px 20px;
+                    width: 100%;
+                    text-transform: capitalize;
+                    margin-top: 20px;
+                    border-radius: 25px;
+                    border: 1px solid $trpGreen;
+                    &::placeholder{
+                        color:$sadoEEE;
+                    }
+                }
+                textarea{
+                    width: 100%;
+                    min-height: 150px;
+                    border: 1px solid $trpGreen;
+                    border-radius: 25px;
+                    margin-top: 20px;
+                    padding: 20px;
+                    text-transform: capitalize;
+                    &::placeholder{
+                        color:$sadoEEE;
+                    }
+                }
+                button{
+                    @include cmnBtn;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
